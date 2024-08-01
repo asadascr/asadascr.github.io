@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de tesis - 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <!-- Incluye Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div align="center">
+                <h1 style="color:#ffffff;">Trabajo final de Graduación</h1>
+            </div>
+            <div align="center">
+                <h2>"Seguimiento de la contaminación con nitratos en los acuíferos de la región norte de la provincia de
+                    Cartago mediante herramientas de software geoespacial."</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Datos/ICONOS/icons/home.png" alt="Inicio"> Presentación</a></li>
+                <li class="dropdown">
+                    <a href="#"><img src="Datos/ICONOS/icons/project.png" alt="Proyecto"> Fases del proyecto de
+                        investigación</a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduccion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Introducción">
+                                Introducción</a></li>
+                        <li><a href="justificacion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Justificación">
+                                Justificación y objetivos</a></li>
+                        <li><a href="planteamieto.html"><img src="Datos\ICONOS\icons\fase.png" alt="Problema">
+                                Planteamiento del problema</a></li>
+                        <li><a href="metodologia.html"><img src="Datos\ICONOS\icons\fase.png" alt="Metodología">
+                                Metodología</a></li>
+                        <li><a href="resultados.html"><img src="Datos\ICONOS\icons\fase.png" alt="Resultados">
+                                Resultados</a></li>
+                        <li><a href="conclusiones.html"><img src="Datos\ICONOS\icons\fase.png" alt="Conclusiones">
+                                Conclusiones</a></li>
+                        <li><a href="referencias.html"><img src="Datos\ICONOS\icons\fase.png" alt="Referencias">
+                                Referencias</a></li>
+                    </ul>
+                </li>
+                <li><a href="geovisor.html"><img src="Datos\ICONOS\icons\globe.png" alt="Geovisor"> Geovisor</a></li>
+                <li><a href="python.html"><img src="Datos\ICONOS\icons/python.png" alt="Python"> Datos en Python</a>
+                </li>
+                <li><a href="descargas.html"><img src="Datos\ICONOS\icons/download.png" alt="Descargas"> Descargas de
+                        información geoespacial</a></li>
+            </ul>
+        </nav>
+        
+        <section id="contenido">
+            <article>
+                <h1> Geovisores</h1>
+                <div align="justify">
+                    <p class="par2">Los geovisores son aplicaciones específicas dentro de los geoportales que permiten
+                        la representación interactiva de datos geoespaciales en forma de mapas dinámicos. Los
+                        geoportales y geovisores representan herramientas esenciales en el ámbito de la gestión de
+                        recursos hídricos, especialmente, cuando se trata de abordar la contaminación de acuíferos, ya
+                        que estas herramientas proporcionan funciones avanzadas de navegación, consulta y análisis
+                        espacial, esto permite a los usuarios explorar y comprender mejor la distribución y el
+                        comportamiento de los contaminantes.</p>
+                    <h3> Datos geoespaciales</h3>
+                    <div align="justify">
+                        <p class="par2">Los datos geoespaciales del geovisor del proyecto se centran en el seguimiento y
+                            análisis de la contaminación por nitratos en los acuíferos de la región norte de la
+                            provincia de Cartago. Estos datos incluyen ubicaciones geográficas precisas de distritos y
+                            puntos de muestreo, así como los niveles de nitratos registrados en cada naciente
+                            geolocalizada. Además, el geovisor integra capas temáticas que representan visualmente la
+                            distribución de la contaminación, permitiendo identificar áreas con alta, media y baja
+                            concentración de nitratos. Esta información es crucial para evaluar el impacto ambiental y
+                            planificar medidas de mitigación efectivas.</p>
+
+                        <p class="par2">Adicionalmente, el geovisor incorpora servicio WMS, del Sistema Nacional de
+                            Áreas de Conservación (SINAC), modelos digitales del terreno basados en la restitución de
+                            las ortofotos del 2015 al 2018 y datos vectoriales de todo el país que proporciona un
+                            contexto más amplio para el análisis de la contaminación. También se presentan capas de
+                            recarga acuífera de la zona en estudio, que fundamental para comprender la dispersión de los
+                            contaminantes. Estas capas de información, combinadas con modelos de dispersión y análisis
+                            geoespaciales, ofrecen una herramienta poderosa para investigadores y autoridades locales en
+                            la gestión sostenible de los recursos hídricos de la región.</p>
+
+                        <!-- Enlace a hoja CSS de Leaflet -->
+                        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+                            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+                        <!-- Enlace a biblioteca JavaScript de Leaflet -->
+                        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+                        <link rel="stylesheet" href="css/leaflet.wmslegend.css">
+
+                        <script src="js/leaflet.wmslegend.js"></script>
+
+                        <!-- JS de GeoRaster -->
+                        <script src="https://unpkg.com/georaster"></script>
+
+                        <!-- JS de GeoRasterLayer -->
+                        <script
+                            src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+
+                        <!-- JS de GeoBlaze -->
+                        <script src="https://unpkg.com/geoblaze"></script>
+
+                        <!-- Enlace a estilos del mapa -->
+                        <link rel="stylesheet" href="css/styles.css" />
+
+                        <!-- Enlace a biblioteca JQuery -->
+                        <script src="https://code.jquery.com/jquery-3.7.1.js"
+                            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+                            crossorigin="anonymous"></script>
+
+                        <!-- Enlace a biblioteca FontAwsome -->
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+                        <!-- Enlace a cloropletas -->
+                        <script src="js/choropleth.js"></script>
+
+                        <!-- Enlace a Leaflet.heat -->
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+
+
+                        </head>
+
+                        <body>
+                            <h3>Geovisor principal</h1>
+
+                                <button id="regresar-coordenada">Zona de estudio</button>
+
+                                <select name="select-location" id="select-location">
+                                    <option value="-1">Seleccione un lugar:</option>
+                                    <option value="9.879386,-83.914471">Carmen</option>
+                                    <option value="9.925700,-83.891686">Tierra Blanca</option>
+                                    <option value="9.940483,-83.917498">Llano Grande</option>
+                                    <option value="9.833592,-83.850493">Paraíso</option>
+                                    <option value="9.865348,-83.810253">Santiago</option>
+                                    <option value="9.847980,-83.880178">Llanos de Santa Lucía</option>
+                                    <option value="9.858863,-83.850167 ">Birrisito</option>
+                                    <option value="9.939661,-83.819085">Pacayas</option>
+                                    <option value="9.892295,-83.803963">Cervantes</option>
+                                    <option value="9.955586,-83.792994">Capellades</option>
+                                    <option value="9.871404,-83.895685">San Rafael</option>
+                                    <option value="9.889120,-83.869660">Cot</option>
+                                    <option value="9.931818,-83.872703">Potrero Cerrado</option>
+                                    <option value="9.893046,-83.842202">Cipreses</option>
+                                    <option value="9.956430,-83.864069">Santa Rosa</option>
+                                </select>
+                                <div id="mapaid"></div>
+
+                                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                                    crossorigin=""></script>
+
+                                <script src="js/principal.js"></script>
+
+                                </head>
+
+                                <!-- Complemento Leaflet.markercluster -->
+                                <link rel="stylesheet"
+                                    href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+                                <link rel="stylesheet"
+                                    href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+                                <script
+                                    src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+
+                                </head>
+
+                                <body>
+
+                    </div>
+            </article>
+        </section>
+
+        <div class="separator"></div>
+
+        <footer>
+            <div align="center">
+                <p class="par">Elaborado por: Godofredo Rojas Mata.
+                    Maestría Profesional en Sistemas de Información Geográfica y Teledetección
+                    Universidad de Costa Rica - Universidad Nacional
+            </div>
+        </footer>
+    </div>
+
+    <!-- Aside for search and other tools -->
+    <aside id="aside">
+        <h4 class="Búsqueda en Google">Búsqueda en Google</h4>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q">
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Botón para ir a Google Maps -->
+        <div>
+            <a href="https://www.google.com/maps" target="_blank">
+                <button>Ir a Google Maps</button>
+            </a>
+        </div>
+        <div>
+            <img src="Datos/ICONOS/LOGO.png" width="250">
+        </div>
+    </aside>
+    </div>
+
+    <script src="js/choropleth.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+
+    <script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+
+    <script src="js/leaflet.wmslegend.js"></script>
+
+    </head>
+
+</body>
+
+</html>

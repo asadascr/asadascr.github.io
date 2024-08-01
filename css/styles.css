@@ -1,0 +1,281 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 30px;
+}
+
+/* Header styles */
+h1 {
+    background-color: #005a4e;
+    color: #ffffff; 
+}
+
+h2 {
+    background-color: #88a776;
+    color: #ffffff; 
+}
+
+h3 {
+    background-color: #a7b39b;
+}
+
+h4 {
+    background-color: #c0d6b2;
+}
+
+/* Paragraph styles */
+.par, .par2, .buscador {
+    font-size: medium;
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Container styles */
+#contenedor {
+    width: 85%;
+    max-width: 1500px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #c3cabe;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(33, 83, 33, 0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Content styles */
+#contenido {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid black;
+    min-height: 700px;
+    box-sizing: border-box;
+}
+
+/* Aside styles */
+#aside {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #54aa8d;
+    padding: 10px;
+    color: white;
+    overflow-y: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.separator {
+    clear: both;
+}
+
+/* Leaflet legend styles */
+.legend {
+    color: #555;
+    padding: 6px 8px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+.legend li {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+}
+
+.legend .min {
+    float: left;
+    padding-bottom: 6px;
+}
+
+.legend .max {
+    float: right;
+}
+
+/* Map styles */
+#mapaid {
+    height: 80vh; /* Ajusta el tamaño del mapa al 80% de la altura de la ventana */
+    width: 100%;  /* El mapa ocupa el 100% del ancho del contenedor */
+    margin: 0 auto; /* Centra el mapa horizontalmente */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1500px) {
+    #contenedor {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #contenido {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
+nav ul li a img {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+}
+
+/* Image container styles */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Asegúrate de que el contenedor del video sea responsivo */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* General styles for the map container */
+#map-container {
+    width: 100%; /* Full width of the parent element */
+    max-width: 800px; /* Maximum width of the map container */
+    height: 400px; /* Fixed height for the map container */
+    margin: 0 auto; /* Center the map container horizontally */
+    border: 1px solid #ccc; /* Optional border for the map container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for better appearance */
+    display: none; /* Initially hide the map container */
+}
+
+/* Ensure the map itself fits within the container */
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove default border */
+}
+
+/* Button styles */
+#show-map-button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #56b68e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show-map-button:hover {
+    background-color: #05660d; /* Darker color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    #map-container {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}

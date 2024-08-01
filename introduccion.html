@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de tesis - 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <!-- Incluye Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div align="center">
+                <h1 style="color:#ffffff;">Trabajo final de Graduación</h1>
+            </div>
+            <div align="center">
+                <h2>"Seguimiento de la contaminación con nitratos en los acuíferos de la región norte de la provincia de
+                    Cartago mediante herramientas de software geoespacial."</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Datos/ICONOS/icons/home.png" alt="Inicio"> Presentación</a></li>
+                <li class="dropdown">
+                    <a href="#"><img src="Datos/ICONOS/icons/project.png" alt="Proyecto"> Fases del proyecto de
+                        investigación</a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduccion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Introducción">
+                                Introducción</a></li>
+                        <li><a href="justificacion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Justificación">
+                                Justificación y objetivos</a></li>
+                        <li><a href="planteamieto.html"><img src="Datos\ICONOS\icons\fase.png" alt="Problema">
+                                Planteamiento del problema</a></li>
+                        <li><a href="metodologia.html"><img src="Datos\ICONOS\icons\fase.png" alt="Metodología">
+                                Metodología</a></li>
+                        <li><a href="resultados.html"><img src="Datos\ICONOS\icons\fase.png" alt="Resultados">
+                                Resultados</a></li>
+                        <li><a href="conclusiones.html"><img src="Datos\ICONOS\icons\fase.png" alt="Conclusiones">
+                                Conclusiones</a></li>
+                        <li><a href="referencias.html"><img src="Datos\ICONOS\icons\fase.png" alt="Referencias">
+                                Referencias</a></li>
+                    </ul>
+                </li>
+                <li><a href="geovisor.html"><img src="Datos\ICONOS\icons\globe.png" alt="Geovisor"> Geovisor</a></li>
+                <li><a href="python.html"><img src="Datos\ICONOS\icons/python.png" alt="Python"> Datos en Python</a>
+                </li>
+                <li><a href="descargas.html"><img src="Datos\ICONOS\icons/download.png" alt="Descargas"> Descargas de
+                        información geoespacial</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+            </article>
+            <article>
+                <h1>Introducción</h1>
+                <div align="justify">
+                    <p class="par">En los últimos años, la región norte de Cartago, ubicada en el centro de Costa Rica,
+                        ha enfrentado serios problemas de contaminación en su suministro de agua. Estudios recientes han
+                        reportado altas concentraciones de nitratos en los manantiales naturales que superan los 50
+                        mg/L, lo cual representa un riesgo significativo para la salud de la población que depende de
+                        estos recursos hídricos (AyA, 2021). Según la Organización Mundial de la Salud (OMS) esto puede
+                        causar graves problemas de salud, entre ellos la methemoglobinemia que es una condición médica
+                        que se caracteriza por la presencia de una cantidad anormal de metahemoglobina en la sangre.
+                        Dicha enfermedad es causada porque una forma de hemoglobina (metahemoglobina) no puede
+                        transportar oxígeno de manera efectiva. Se considera especialmente peligrosa en niños, debido a
+                        que puede provocar síntomas como cianosis, fatiga y dificultad para respirar. Luego, en casos
+                        severos puede ser potencialmente mortal (WHO, 1985). Este fenómeno de contaminación está
+                        estrechamente vinculado a prácticas agrícolas intensivas en áreas de recarga acuífera y al uso
+                        inadecuado de fosas sépticas en zonas urbanas que facilitan la infiltración de fertilizantes
+                        ricos en nitrógeno y desechos de ganado en el sistema hídrico (Bravenboer et al., 2023).
+                    <p class="par">Definitivamente, al abordar esta problemática es necesario implementar mejores
+                        prácticas agrícolas, gestionar adecuadamente los residuos en las áreas de recarga y el monitoreo
+                        continuo de la calidad del agua como un factor decisivo para asegurar la salud pública. Las
+                        herramientas geoespaciales han evolucionado significativamente con el avance tecnológico de las
+                        últimas décadas, lo cual permite ayudar en los problemas mencionados y brindar aportes
+                        fundamentales. Los programas informáticos permiten trabajar con datos geográficos y facilitan la
+                        recopilación, el almacenamiento, la manipulación, el análisis y la visualización de información
+                        relacionada con ubicaciones específicas en la Tierra. La utilización de los SIG y la
+                        teledetección han demostrado ser eficaces en la gestión de cuencas hidrográficas en diversas
+                        partes del mundo. Por ejemplo, en un estudio realizado en la cuenca del río Ebro en España se
+                        utilizaron SIG para identificar zonas críticas de contaminación por nitratos y desarrollar
+                        estrategias de mitigación específicas (Serra et al., 2023). Del mismo modo, en la cuenca del río
+                        Mississippi en los Estados Unidos, el uso de imágenes satelitales ha permitido monitorear la
+                        escorrentía agrícola y su impacto en la calidad del agua (Ross et al., 2019).
+                    <p class="par">El uso de estas herramientas, en el presente proyecto de investigación, sirve como un
+                        instrumento efectivo para el seguimiento y la gestión de la calidad del agua en los acuíferos de
+                        la región norte de la provincia de Cartago. La implementación de herramientas geoespaciales
+                        contribuye a la gestión sostenible de los acuíferos al permitir la detección temprana de
+                        problemas de contaminación por nitratos y promover acciones preventivas o correctivas para
+                        proteger la calidad del agua, lo cual coadyuva a preservar el medio ambiente. Este enfoque no
+                        solo facilita la identificación de las áreas más afectadas, sino que también proporciona a las
+                        autoridades locales y a la población una plataforma accesible para la toma de decisiones en
+                        conjunto con la colaboración científica en la gestión del recurso hídrico.
+                    <p class="par">Un aspecto primordial para abordar eficazmente la contaminación por nitratos es la
+                        coordinación entre diferentes entidades gubernamentales, organizaciones no gubernamentales,
+                        centros de investigación y la comunidad local implementando soluciones integrales y sostenibles
+                        (Reed, 2008). En este contexto, abordajes de investigaciones anteriores, como el proyecto de
+                        maestría de la <a href="https://www.tudelft.nl/en/">Universidad Técnica de Delft</a> y el <a
+                            href="https://www.tec.ac.cr/"> Instituto Tecnológico de Costa Rica (ITCR) </a> por
+                        Bravenboer et al. (2023), han permitido fomentar la participación activa de las entidades
+                        encargadas del recurso hídrico y de la comunidad en la identificación de problemas e
+                        implementación de medidas correctivas. De esta manera, la educación y la concientización sobre
+                        el manejo adecuado de fertilizantes y residuos se han convertido en componentes clave para
+                        prevenir futuras contaminaciones y promover tanto prácticas agrícolas como urbanas sostenibles
+                        (Pretty, 2003).
+                    <p class="par">El presente estudio se enfoca en la implementación de herramientas geoespaciales como
+                        parte integral de una estrategia multidisciplinaria para la gestión sostenible del agua. La
+                        integración de los SIG y la teledetección no solo facilita la identificación y monitoreo de
+                        áreas críticas de contaminación, sino que también fortalece la capacidad de las autoridades
+                        locales y la comunidad científica para tomar decisiones informadas al coordinar las acciones
+                        respectivas. Los resultados de esta investigación tienen el potencial de beneficiar directamente
+                        a la comunidad local, puesto que contribuyen al mejoramiento de las políticas públicas y a la
+                        gestión de los recursos hídricos en Cartago.</p>
+                </div>
+
+            </article>
+            <article>
+                <h2>Área de trabajo</h2>
+                <div align="justify">
+                    <p class="par">
+                        El área de investigación se define las comunidades de Cartago, Tierra Blanca, Oreamuno,
+                        Cipreses, Capellades y Paraíso .
+                        Esta es el área en la que se recopilan y analizan los datos.
+                    </p>
+                </div>
+                <br>
+
+                <h3>Tabla de Distritos</h3>
+                <style>
+                    table {
+                        width: 80%;
+                        border-collapse: collapse;
+                    }
+
+                    th,
+                    td {
+                        border: 1px solid black;
+                        padding: 7px;
+                        text-align: left;
+                    }
+
+                    th {
+                        background-color: #b8cebc;
+                    }
+                </style>
+                </head>
+
+                <body>
+                    <div align="center">
+                        <p class="par">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código de Distrito</th>
+                                    <th>Nombre del Distrito</th>
+                                    <th>Código de Distrito</th>
+                                    <th>Nombre del Distrito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30103</td>
+                                    <td>Carmen</td>
+                                    <td>30602</td>
+                                    <td>Cervantes</td>
+                                </tr>
+                                <tr>
+                                    <td>30108</td>
+                                    <td>Tierra Blanca</td>
+                                    <td>30603</td>
+                                    <td>Capellades</td>
+                                </tr>
+                                <tr>
+                                    <td>30110</td>
+                                    <td>Llano Grande</td>
+                                    <td>30701</td>
+                                    <td>San Rafael</td>
+                                </tr>
+                                <tr>
+                                    <td>30201</td>
+                                    <td>Paraíso</td>
+                                    <td>30702</td>
+                                    <td>Cot</td>
+                                </tr>
+                                <tr>
+                                    <td>30202</td>
+                                    <td>Santiago</td>
+                                    <td>30703</td>
+                                    <td>Potrero Cerrado</td>
+                                </tr>
+                                <tr>
+                                    <td>30205</td>
+                                    <td>Llanos de Santa Lucia</td>
+                                    <td>30704</td>
+                                    <td>Cipreses</td>
+                                </tr>
+                                <tr>
+                                    <td>30206</td>
+                                    <td>Birrisito</td>
+                                    <td>30705</td>
+                                    <td>Santa Rosa</td>
+
+
+                                <tr>
+                                    <td>30601</td>
+                                    <td>Pacayas</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Fuente: <a href="https://www.snitcr.go.cr/ico_servicios_ogc"> IGN-SNIT (2024)</a></p>
+
+                        </p>
+                        <br>
+
+                        <div align="center">
+                            <img src="Datos/Mapas/Mapa_1.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto;">
+                        </div>
+
+                        <div align="center">
+                            <em>Delimitación del área de investigación.
+                        </div> </em>
+
+                        </br>
+            </article>
+        </section>
+
+        <div class="separator"></div>
+
+        <footer>
+            <div align="center">
+                <p class="par">Elaborado por: Godofredo Rojas Mata.
+                    Maestría Profesional en Sistemas de Información Geográfica y Teledetección
+                    Universidad de Costa Rica - Universidad Nacional
+            </div>
+        </footer>
+    </div>
+
+    <!-- Aside for search and other tools -->
+    <aside id="aside">
+        <h4 class="Búsqueda en Google">Búsqueda en Google</h4>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q">
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Botón para ir a Google Maps -->
+        <div>
+            <a href="https://www.google.com/maps" target="_blank">
+                <button>Ir a Google Maps</button>
+            </a>
+        </div>
+        <div>
+            <img src="Datos/ICONOS/LOGO.png" width="250">
+        </div>
+    </aside>
+
+</body>
+
+</html>

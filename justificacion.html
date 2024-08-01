@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de tesis - 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <!-- Incluye Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div align="center">
+                <h1 style="color:#ffffff;">Trabajo final de Graduación</h1>
+            </div>
+            <div align="center">
+                <h2>"Seguimiento de la contaminación con nitratos en los acuíferos de la región norte de la provincia de
+                    Cartago mediante herramientas de software geoespacial."</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Datos/ICONOS/icons/home.png" alt="Inicio"> Presentación</a></li>
+                <li class="dropdown">
+                    <a href="#"><img src="Datos/ICONOS/icons/project.png" alt="Proyecto"> Fases del proyecto de
+                        investigación</a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduccion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Introducción">
+                                Introducción</a></li>
+                        <li><a href="justificacion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Justificación">
+                                Justificación y objetivos</a></li>
+                        <li><a href="planteamieto.html"><img src="Datos\ICONOS\icons\fase.png" alt="Problema">
+                                Planteamiento del problema</a></li>
+                        <li><a href="metodologia.html"><img src="Datos\ICONOS\icons\fase.png" alt="Metodología">
+                                Metodología</a></li>
+                        <li><a href="resultados.html"><img src="Datos\ICONOS\icons\fase.png" alt="Resultados">
+                                Resultados</a></li>
+                        <li><a href="conclusiones.html"><img src="Datos\ICONOS\icons\fase.png" alt="Conclusiones">
+                                Conclusiones</a></li>
+                        <li><a href="referencias.html"><img src="Datos\ICONOS\icons\fase.png" alt="Referencias">
+                                Referencias</a></li>
+                    </ul>
+                </li>
+                <li><a href="geovisor.html"><img src="Datos\ICONOS\icons\globe.png" alt="Geovisor"> Geovisor</a></li>
+                <li><a href="python.html"><img src="Datos\ICONOS\icons/python.png" alt="Python"> Datos en Python</a>
+                </li>
+                <li><a href="descargas.html"><img src="Datos\ICONOS\icons/download.png" alt="Descargas"> Descargas de
+                        información geoespacial</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+            <article>
+                <h1>Justificacion</h1>
+                <div align="justify">
+                    <p class="par">Los habitantes de la región norte de la provincia de Cartago dependen de manantiales
+                        naturales para su agua potable. Las concentraciones de contaminantes en estas fuentes de agua se
+                        miden ocasionalmente y cuando superan los valores críticos se recomienda a los consumidores no
+                        ingerir esa agua. Por lo cual, deben encontrarse otras soluciones para suministrar a los
+                        ciudadanos agua potable.
+
+                    <p class="par">A menudo, un aumento en la concentración de nitratos en el agua es causado por
+                        actividades antropogénicas. Uno de los grandes contribuyentes puede ser la fertilización
+                        excesiva de las tierras agrícolas, ya que algunos fertilizantes contienen amonio que se
+                        convertirá en su forma más estable, unos nitratos (Lloret-Pastor, 2022) y otros ya tienen el
+                        compuesto de nitratos en forma de nitrato de amonio (Lasanta-Martínez et al., 2008). Estos
+                        nitratos pueden escurrirse a cuerpos de agua o filtrarse al suelo y contaminar de manera
+                        subterránea el acuífero. La falta de conocimiento sobre el uso de pesticidas y fertilizantes,
+                        así como fallas en el sistema de descarga doméstico pueden ser la razón de los problemas
+                        (Ordoñez-Beltrán et al., 2019). Dentro de dichas problemáticas está la falta del tratamiento de
+                        los desechos provenientes de los tanques sépticos (Rosales-Escalante, 2003). De igual forma, el
+                        tratamiento insuficiente de las aguas residuales también contribuyente con las altas
+                        concentraciones de nitratos.
+
+                    <p class="par">Este proyecto se justifica por la necesidad urgente de abordar la contaminación por
+                        nitratos en los acuíferos de la región norte de la provincia de Cartago, un problema que afecta
+                        la salud pública y la sostenibilidad ambiental. La creación de una base de datos espacial
+                        actualizada y homologada, así como el desarrollo de un geoportal de libre acceso proporcionan
+                        una herramienta eficaz para la gestión de la calidad del agua. La implementación de estos
+                        recursos permite dar seguimiento a los datos recolectados, la promoción de acciones preventivas
+                        o correctivas y la facilitación en la toma de decisiones informadas por parte de las autoridades
+                        locales y las ASADAS. Además, este proyecto fomenta la colaboración científica y la
+                        participación comunitaria para garantizar la transparencia y el acceso a la información, lo cual
+                        contribuyendo a la gestión sostenible del recurso hídrico en la región
+                    </p>
+                </div>
+                <br>
+
+                <div align="center">
+                    <img src="Datos/Imagenes/2.jpg" width="900">
+                </div>
+
+                <div align="center">
+                    <em><a
+                            href="https://www.elpais.cr/2023/06/22/investigan-en-europa-sobre-la-contaminacion-del-agua-en-cartago/">Vista
+                            de Cipreces de Oreamuno, Cartago</a>
+                </div> </em>
+                </br>
+
+                <article>
+                    <h2>Objetivos</h2>
+                    <h3>Objetivo general</h3>
+                    <div align="justify">
+                        <p class="par">Desarrollar una plataforma web que implemente un geoportal para la interpretación
+                            y análisis de datos e información sobre la presencia y distribución de nitratos en los
+                            acuíferos de la región norte de la provincia de Cartago.
+
+                        <h3>Objetivo general</h3>
+                        <div align="justify">
+                            <p class="par"> - Realizar un inventario de las bases de datos relacionadas con la presencia
+                                y distribución de nitratos en los acuíferos de la región norte de la provincia de
+                                Cartago con el fin de identificar las áreas de riesgo, los patrones espaciales y
+                                temporales de contaminación.
+
+                            <p class="par"> - Sistematizar la información procedente de las instituciones encargadas del
+                                recurso hídrico para generar una base de datos e integrarla al geoportal.
+
+                            <p class="par"> - Implementar una herramienta geoespacial que permita la visualización y
+                                análisis de datos para facilitar la toma de decisiones efectivas en relación con la
+                                presencia y distribución de nitratos en los acuíferos de la región norte de la provincia
+                                de Cartago.</p>
+
+                            </ul>
+
+                            </nav>
+                            </head>
+
+</html>
+
+</article>
+</section>
+
+<div class="separator"></div>
+
+<footer>
+    <div align="center">
+        <p class="par">Elaborado por: Godofredo Rojas Mata.
+            Maestría Profesional en Sistemas de Información Geográfica y Teledetección
+            Universidad de Costa Rica - Universidad Nacional
+    </div>
+</footer>
+</div>
+
+<!-- Aside for search and other tools -->
+<aside id="aside">
+    <h4 class="Búsqueda en Google">Búsqueda en Google</h4>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <input type="text" name="q">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <!-- Botón para ir a Google Maps -->
+    <div>
+        <a href="https://www.google.com/maps" target="_blank">
+            <button>Ir a Google Maps</button>
+        </a>
+    </div>
+    <div>
+        <img src="Datos/ICONOS/LOGO.png" width="250">
+    </div>
+</aside>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de tesis - 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js" defer></script>
+    <!-- Incluye Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div align="center">
+                <h1 style="color:#ffffff;">Trabajo final de Graduación</h1>
+            </div>
+            <div align="center">
+                <h2>"Seguimiento de la contaminación con nitratos en los acuíferos de la región norte de la provincia de
+                    Cartago mediante herramientas de software geoespacial."</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Datos/ICONOS/icons/home.png" alt="Inicio"> Presentación</a></li>
+                <li class="dropdown">
+                    <a href="#"><img src="Datos/ICONOS/icons/project.png" alt="Proyecto"> Fases del proyecto de
+                        investigación</a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduccion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Introducción">
+                                Introducción</a></li>
+                        <li><a href="justificacion.html"><img src="Datos\ICONOS\icons\fase.png" alt="Justificación">
+                                Justificación y objetivos</a></li>
+                        <li><a href="planteamieto.html"><img src="Datos\ICONOS\icons\fase.png" alt="Problema">
+                                Planteamiento del problema</a></li>
+                        <li><a href="metodologia.html"><img src="Datos\ICONOS\icons\fase.png" alt="Metodología">
+                                Metodología</a></li>
+                        <li><a href="resultados.html"><img src="Datos\ICONOS\icons\fase.png" alt="Resultados">
+                                Resultados</a></li>
+                        <li><a href="conclusiones.html"><img src="Datos\ICONOS\icons\fase.png" alt="Conclusiones">
+                                Conclusiones</a></li>
+                        <li><a href="referencias.html"><img src="Datos\ICONOS\icons\fase.png" alt="Referencias">
+                                Referencias</a></li>
+                    </ul>
+                </li>
+                <li><a href="geovisor.html"><img src="Datos\ICONOS\icons\globe.png" alt="Geovisor"> Geovisor</a></li>
+                <li><a href="python.html"><img src="Datos\ICONOS\icons/python.png" alt="Python"> Datos en Python</a>
+                </li>
+                <li><a href="descargas.html"><img src="Datos\ICONOS\icons/download.png" alt="Descargas"> Descargas de
+                        información geoespacial</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+            <article>
+                <h1> Resumen</h1>
+                <div align="justify">
+                    <p class="par"> La región norte de Cartago, Costa Rica, enfrenta un serio problema de contaminación
+                        del agua debido a que los niveles de nitratos superan los 50 mg/L en los manantiales naturales.
+                        Según datos generados como parte de un proyecto de investigación realizado por estudiantes de
+                        maestría de la <a href="https://www.tudelft.nl/en/">Universidad Técnica de Delft</a>, esta
+                        contaminación está relacionada principalmente con actividades antropogénicas como la agricultura
+                        intensiva y el manejo inadecuado de aguas residuales.
+
+                    <p class="par">Para ayudar a resolver este problema, este proyecto se centra en la implementación de
+                        herramientas geoespaciales basadas Sistemas de Información Geográfica (SIG) y la teledetección.
+                        Dichas tecnologías facilitan la recopilación, el almacenamiento, el análisis y la visualización
+                        de datos geográficos, lo cual permitió el desarrollo de una plataforma web para la
+                        interpretación y análisis de datos sobre la presencia y la distribución de nitratos en los
+                        acuíferos de la región norte de la provincia de Cartago.
+
+                    <p class="par">La metodología empleada incluye el uso de capas vectoriales y ráster para identificar
+                        las fuentes de contaminación mediante una base de datos geoespacial que integra información de
+                        nacientes, zonas de recarga acuífera, concentración de nitratos y el uso de la tierra
+                        circundante. Además, se desarrolló un <a href="https://asadascr.github.io/">geoportal</a> y <a
+                            href=" https://asadascr.github.io/geovisor.html">geovisor</a> de acceso libre en el cual se
+                        muestran los principales resultados.
+
+                    <p class="par">El fin de la investigación es que las herramientas geoespaciales faciliten la toma de
+                        decisiones en la gestión del agua por parte de las autoridades locales y la población, de manera
+                        que su empleo sea una estrategia efectiva para enfrentar la contaminación por nitratos. La
+                        colaboración entre diferentes entidades y la participación activa de la comunidad son esenciales
+                        para asegurar la sostenibilidad de los acuíferos y la salud pública. Este proyecto no solo
+                        aborda un problema crítico de salud, sino que también establece un modelo replicable para otras
+                        regiones con desafíos similares.</p>
+
+                    <div align="center">
+                        <img src="Datos/Imagenes/1.jpg" width="900">
+                    </div>
+            </article>
+        </section>
+
+        <div class="separator"></div>
+
+        <footer>
+            <div align="center">
+                <p class="par">Elaborado por: Godofredo Rojas Mata.
+                    Maestría Profesional en Sistemas de Información Geográfica y Teledetección
+                    Universidad de Costa Rica - Universidad Nacional
+            </div>
+        </footer>
+    </div>
+
+    <!-- Aside for search and other tools -->
+    <aside id="aside">
+        <h4 class="Búsqueda en Google">Búsqueda en Google</h4>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q">
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Botón para ir a Google Maps -->
+        <div>
+            <a href="https://www.google.com/maps" target="_blank">
+                <button>Ir a Google Maps</button>
+            </a>
+        </div>
+        <div>
+            <img src="Datos/ICONOS/LOGO.png" width="250">
+        </div>
+    </aside>
+
+</body>
+
+</html>
